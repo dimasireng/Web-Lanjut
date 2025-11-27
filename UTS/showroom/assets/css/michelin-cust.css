@@ -1,0 +1,111 @@
+/* ===== Global Page Wrapper ===== */
+.content-wrapper {
+    padding: 20px 0;
+    background: #f3f6fc;
+}
+
+/* ===== Featured Models Section ===== */
+#featured {
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+#featured h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--michelin-blue);
+    margin-bottom: 20px;
+}
+
+/* Fix card alignment */
+.premium-card {
+    border-radius: 14px !important;
+    overflow: hidden !important;
+    border: none !important;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+    transition: 0.25s ease;
+}
+
+.premium-card:hover {
+    box-shadow: 0 12px 22px rgba(0, 0, 0, 0.15);
+    transform: translateY(-4px);
+}
+
+/* ===== WHY SECTION FIX ===== */
+.why-section {
+    background: #ffffff;
+    padding: 45px 40px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.why-title {
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--michelin-blue);
+}
+
+.why-box h4 {
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--michelin-blue);
+}
+
+.why-box p {
+    font-size: 14px;
+    color: #556;
+    margin-top: 4px;
+}
+
+/* icon wrapper */
+.why-icon {
+    width: 60px;
+    height: 60px;
+    background: #eef3ff;
+    border-radius: 12px;
+    margin: 0 auto 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.why-icon img {
+    width: 32px;
+    height: 32px;
+}
+
+/* fix alignment */
+.why-box {
+    padding: 10px 10px;
+}
+
+/* ===== TESTIMONIAL SLIDER ===== */
+.testimonial-section h2 {
+    font-weight: 800;
+    color: var(--michelin-blue);
+}
+
+.testimonial-box {
+    max-width: 650px;
+    margin: auto;
+    background: #ffffff;
+    padding: 35px 40px;
+    border-radius: 14px;
+    text-align: center;
+    font-size: 17px;
+    line-height: 1.6;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+    border-left: 6px solid var(--michelin-yellow);
+    border-right: 6px solid var(--michelin-yellow);
+}
+
+.testimonial-box h5 {
+    margin-top: 15px;
+    font-weight: 700;
+    color: var(--michelin-blue-dark);
+}
+
+.carousel-item {
+    transition: opacity 0.8s ease-in-out;
+}

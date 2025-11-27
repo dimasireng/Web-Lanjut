@@ -1,0 +1,123 @@
+/* RAPIKAN FORM */
+form .form-label {
+    font-size: 15px;
+}
+
+form .form-control-lg,
+form .form-select-lg {
+    border-radius: 10px;
+    padding: 12px 14px;
+}
+
+/* JARAK ANTAR GRID */
+.row.g-4>[class*='col-'] {
+    padding-bottom: 8px;
+}
+
+/* CARD / SECTION BIAR TIDAK MEPET */
+section {
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 14px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.05);
+}
+
+/* ================================
+   PREMIUM MODEL CARDS
+================================== */
+
+/* Grid spacing rapi */
+#models .row {
+    row-gap: 2rem;
+}
+
+/* CARD PREMIUM */
+.model-card {
+    border: none;
+    border-radius: 18px;
+    overflow: hidden;
+    background: #ffffff;
+    transition: all 0.25s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.model-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.20);
+}
+
+/* IMAGE */
+.model-card img {
+    height: 240px !important;
+    object-fit: cover;
+}
+
+/* TITLE */
+.model-card .card-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #0a2c6f;
+}
+
+/* SPEC */
+.model-card .card-text {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Badge */
+.badge-available {
+    background: #14b866 !important;
+    padding: 6px 12px;
+    font-size: 0.75rem;
+    border-radius: 20px;
+}
+
+/* Button */
+.model-card .btn-primary {
+    font-weight: 600;
+    padding: 6px 16px !important;
+    border-radius: 12px;
+}
+
+.model-card .btn-primary:hover {
+    background: #003cba;
+}
+
+/* =========================================
+   PREMIUM HEADER (GRADIENT + GLASS)
+========================================= */
+
+.navbar-premium {
+    background: linear-gradient(90deg, #003087, #0055d4);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(6px);
+    border-bottom: 3px solid #ffd100;
+}
+
+.navbar-premium a {
+    color: #fff !important;
+    font-weight: 600;
+}
+
+.navbar-premium .btn-outline-light {
+    border-color: #fff !important;
+    color: #fff !important;
+}
+
+.navbar-premium .btn-outline-light:hover {
+    background: #fff !important;
+    color: #003087 !important;
+}
+
+/* ========================================
+   BACKGROUND PREMIUM
+======================================== */
+
+body {
+    background: #eef1f5 !important;
+    background-image:
+        radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.6), transparent 60%),
+        radial-gradient(circle at 80% 0%, rgba(255, 255, 255, 0.5), transparent 70%),
+        radial-gradient(circle at 50% 100%, rgba(255, 255, 255, 0.4), transparent 60%);
+}

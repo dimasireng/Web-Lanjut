@@ -1,0 +1,58 @@
+/* ================================
+   PREMIUM MODEL CARDS
+================================== */
+#models .row {
+    row-gap: 2rem !important;
+}
+
+.model-card {
+    border: none;
+    border-radius: 18px;
+    overflow: hidden;
+    background: #ffffff;
+    transition: all 0.25s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.model-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.20);
+}
+
+.model-card img {
+    height: 240px !important;
+    object-fit: cover;
+}
+
+.model-card .card-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #0a2c6f;
+}
+
+.model-card .card-text {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.badge-available {
+    background: #14b866 !important;
+    padding: 6px 12px;
+    font-size: 0.75rem;
+    border-radius: 20px;
+}
+
+.model-card .btn-primary {
+    font-weight: 600;
+    padding: 6px 16px !important;
+    border-radius: 12px;
+}
+
+.model-card {
+    border: none !important;
+    border-radius: 18px !important;
+    overflow: hidden;
+    background: #ffffff;
+    transition: all 0.25s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08) !important;
+}

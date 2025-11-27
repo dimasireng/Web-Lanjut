@@ -1,0 +1,268 @@
+/* ===== MICHELIN THEME ===== */
+:root {
+    --michelin-blue: #003da5;
+    --michelin-blue-dark: #002873;
+    --michelin-yellow: #ffd200;
+    --michelin-gray: #f5f7fa;
+    --michelin-border: #d9dee7;
+}
+
+/* global */
+body {
+    background: var(--michelin-gray) !important;
+    font-family: "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+    color: #0f1b3d;
+}
+
+/* top nav */
+.navbar {
+    background: var(--michelin-blue) !important;
+    border-bottom: 4px solid var(--michelin-yellow) !important;
+}
+
+/* sidebar */
+.sidebar {
+    background: var(--michelin-blue) !important;
+    color: #ffffff !important;
+    padding-top: 18px;
+}
+
+.sidebar h5 {
+    color: #ffffff !important;
+    font-weight: 700;
+}
+
+.sidebar .nav-link {
+    color: rgba(255, 255, 255, 0.9) !important;
+    background: transparent !important;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    padding: 10px 14px;
+    font-weight: 600;
+}
+
+.sidebar .nav-link:hover {
+    background: rgba(255, 210, 0, 0.12) !important;
+    color: #000 !important;
+}
+
+.sidebar .nav-link.active {
+    background: var(--michelin-yellow) !important;
+    color: #000 !important;
+    border-left: 4px solid var(--michelin-blue-dark) !important;
+}
+
+/* cards */
+.card {
+    border-radius: 10px !important;
+    border: 1px solid var(--michelin-border) !important;
+}
+
+/* ========================================================
+   TABLE STYLING (FINAL)
+======================================================== */
+
+/* WRAPPER — radius only works here */
+.table-rounded {
+    border-radius: 14px !important;
+    overflow: hidden !important;
+    border: 2px solid #000 !important;
+    display: block !important;
+    background: var(--michelin-blue);
+}
+
+/* inner responsive */
+.table-rounded .table-responsive {
+    overflow-x: auto;
+}
+
+/* real table */
+.table-rounded table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    border: none !important;
+}
+
+/* header */
+.table-rounded thead th {
+    background: var(--michelin-blue-dark) !important;
+    color: #fff !important;
+    font-weight: 700 !important;
+    border-bottom: 2px solid #000 !important;
+}
+
+/* zebra */
+.table-rounded tbody tr:nth-child(odd) {
+    background: #0748c5 !important;
+}
+
+.table-rounded tbody tr:nth-child(even) {
+    background: #0a3b8e !important;
+}
+
+/* text + bottom border */
+.table-rounded th,
+.table-rounded td {
+    color: #fff !important;
+    padding: 14px 16px !important;
+    border-bottom: 1px solid #000 !important;
+    white-space: nowrap;
+}
+
+/* remove side borders to let radius appear */
+.table-rounded th:first-child,
+.table-rounded td:first-child {
+    border-left: none !important;
+}
+
+.table-rounded th:last-child,
+.table-rounded td:last-child {
+    border-right: none !important;
+}
+
+/* hover glow */
+.table-rounded tbody tr {
+    transition: 0.25s ease !important;
+}
+
+.table-rounded tbody tr:hover {
+    background: #0d47ce !important;
+    box-shadow:
+        0 0 12px rgba(0, 140, 255, 0.65) inset,
+        0 0 10px rgba(0, 140, 255, 0.55);
+    transform: scale(1.001);
+}
+
+/* ========================================================
+   BUTTONS
+======================================================== */
+
+.btn-primary {
+    background: var(--michelin-blue) !important;
+    border-color: var(--michelin-blue) !important;
+    color: #fff !important;
+}
+
+.btn-primary:hover {
+    background: var(--michelin-blue-dark) !important;
+    border-color: var(--michelin-blue-dark) !important;
+}
+
+.btn-warning {
+    background: var(--michelin-yellow) !important;
+    border-color: var(--michelin-yellow) !important;
+    color: #000 !important;
+}
+
+.btn-danger {
+    background: #cf102d !important;
+    border-color: #cf102d !important;
+    color: #fff !important;
+}
+
+/* badges */
+.badge {
+    font-weight: 600 !important;
+}
+
+.badge-success {
+    background: #1db954 !important;
+}
+
+.badge-danger {
+    background: #cf102d !important;
+}
+
+.badge-warning {
+    background: var(--michelin-yellow) !important;
+    color: #000 !important;
+}
+
+.badge-info {
+    background: var(--michelin-blue) !important;
+    color: #fff !important;
+}
+
+/* titles */
+h1,
+h2,
+h3,
+h4 {
+    color: var(--michelin-blue) !important;
+    font-weight: 700 !important;
+}
+
+/* Email lebih terang */
+.table-rounded td small.text-muted {
+    color: #dce9ff !important;
+    /* biru muda terang */
+    font-weight: 500 !important;
+}
+
+/* === LOGIN SLIDESHOW BACKGROUND === */
+.login-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.login-bg img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    animation: bgFade 20s infinite;
+}
+
+/* masing-masing gambar muncul di waktu berbeda */
+.login-bg img:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.login-bg img:nth-child(2) {
+    animation-delay: 5s;
+}
+
+.login-bg img:nth-child(3) {
+    animation-delay: 10s;
+}
+
+.login-bg img:nth-child(4) {
+    animation-delay: 15s;
+}
+
+@keyframes bgFade {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/* login card styling */
+.login-card {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(6px);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+    padding: 30px;
+}

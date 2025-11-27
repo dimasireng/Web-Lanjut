@@ -1,0 +1,203 @@
+/* /showroom/assets/michelin-theme.css
+   Michelin theme — blue dominant + yellow accent + white background
+*/
+
+:root {
+    --m-blue: #0b57a4;
+    --m-blue-600: #084b95;
+    --m-blue-400: #2b78c3;
+    --m-yellow: #ffd400;
+    --m-white: #ffffff;
+    --m-surface: #f8fbff;
+    --m-border: #e6eef9;
+    --m-radius: 8px;
+    --m-card-shadow: 0 4px 14px rgba(11, 87, 164, 0.06);
+    --m-font-sans: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Base */
+html,
+body {
+    height: 100%;
+    background: var(--m-surface);
+    color: #14202a;
+    font-family: var(--m-font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    padding: 0;
+}
+
+/* Links */
+a {
+    color: var(--m-blue);
+}
+
+a:hover {
+    color: var(--m-blue-400);
+}
+
+/* Navbar / Header */
+.navbar,
+header.navbar {
+    background: linear-gradient(90deg, var(--m-blue), var(--m-blue-600));
+    box-shadow: 0 2px 8px rgba(3, 37, 76, 0.12);
+}
+
+.navbar .navbar-brand {
+    color: var(--m-white) !important;
+    font-weight: 700;
+}
+
+.navbar .nav-link,
+.navbar .btn {
+    color: rgba(255, 255, 255, 0.95) !important;
+}
+
+/* Sidebar */
+.sidebar {
+    background: linear-gradient(180deg, var(--m-white), #f6fbff);
+    border-right: 1px solid var(--m-border);
+}
+
+.sidebar .nav-link {
+    color: #0f2540;
+    border-radius: 6px;
+    padding: .6rem .8rem;
+}
+
+.sidebar .nav-link.active {
+    background: linear-gradient(90deg, rgba(11, 87, 164, 0.08), rgba(11, 87, 164, 0.04));
+    color: var(--m-blue);
+    font-weight: 600;
+}
+
+.sidebar h5 {
+    color: var(--m-blue-600);
+}
+
+/* Cards */
+.card {
+    border: 1px solid var(--m-border);
+    border-radius: var(--m-radius);
+    background: var(--m-white);
+    box-shadow: var(--m-card-shadow);
+}
+
+.card .card-body h6,
+.card .card-body h5 {
+    color: #122233;
+}
+
+/* Buttons */
+.btn-primary,
+.btn-primary:focus,
+.btn-primary:hover {
+    background: var(--m-blue) !important;
+    border-color: var(--m-blue) !important;
+    box-shadow: none;
+}
+
+.btn-outline-primary {
+    color: var(--m-blue);
+    border-color: var(--m-blue);
+}
+
+.btn-accent {
+    background: var(--m-yellow);
+    color: #122233;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.btn-sm {
+    border-radius: 6px;
+}
+
+/* Badges */
+.badge.bg-success {
+    background: #0fbf67 !important;
+}
+
+.badge.bg-primary {
+    background: var(--m-blue) !important;
+    color: var(--m-white);
+}
+
+.badge-yellow {
+    background: var(--m-yellow);
+    color: #122233;
+}
+
+/* Tables */
+.table {
+    background: var(--m-white);
+    border: 1px solid var(--m-border);
+}
+
+.table thead th {
+    border-bottom: 2px solid var(--m-border);
+}
+
+/* Forms */
+.form-control {
+    border: 1px solid var(--m-border);
+    border-radius: 6px;
+    padding: .5rem .65rem;
+    box-shadow: none;
+}
+
+.form-label {
+    color: #213244;
+}
+
+/* Card images (thumbnails) */
+.card-img-top {
+    border-top-left-radius: calc(var(--m-radius) - 4px);
+    border-top-right-radius: calc(var(--m-radius) - 4px);
+    background: #eef6ff;
+    object-fit: cover;
+}
+
+/* Modal */
+.modal-content {
+    border-radius: 10px;
+    border: 1px solid var(--m-border);
+}
+
+.modal-header,
+.modal-footer {
+    border-color: var(--m-border);
+}
+
+/* Utilities */
+.text-accent {
+    color: var(--m-blue) !important;
+}
+
+.kv-muted {
+    color: #6c757d;
+}
+
+.container,
+.container-fluid {
+    max-width: 1200px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+
+    .navbar .navbar-brand {
+        font-size: 1rem;
+    }
+}
+
+/* Focus (accessibility) */
+a:focus,
+button:focus,
+input:focus {
+    outline: 3px solid rgba(11, 87, 164, 0.18);
+    outline-offset: 2px;
+}

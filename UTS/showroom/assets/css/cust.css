@@ -1,0 +1,168 @@
+/* === PREMIUM SUPERCAR THEME — CUSTOMER AREA === */
+
+:root {
+    --blue: #003da5;
+    --blue-dark: #002873;
+    --yellow: #ffd200;
+    --gray-bg: #f5f7fa;
+    --border: #d9dee7;
+    --card-shadow: 0 4px 25px rgba(0, 0, 0, 0.08);
+}
+
+body {
+    background: var(--gray-bg) !important;
+    font-family: "Segoe UI", system-ui;
+    color: #0f1b3d;
+}
+
+/* NAVBAR */
+.navbar {
+    background: var(--blue) !important;
+    border-bottom: 4px solid var(--yellow);
+}
+
+.navbar a.nav-link {
+    color: #fff !important;
+    font-weight: 500;
+}
+
+.navbar a.nav-link:hover {
+    opacity: .7;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(135deg, var(--blue) 0%, var(--blue-dark) 100%);
+    color: #fff !important;
+    padding: 50px 30px;
+    border-radius: 16px;
+    box-shadow: var(--card-shadow);
+}
+
+.hero .btn-primary {
+    background: var(--yellow);
+    border-color: var(--yellow);
+    color: #000;
+    font-weight: 600;
+}
+
+.hero .btn-outline-primary {
+    border-color: var(--yellow);
+    color: var(--yellow);
+    font-weight: 600;
+}
+
+.hero .btn-outline-primary:hover {
+    background: var(--yellow);
+    color: #000;
+}
+
+.hero {
+    padding: 80px 0;
+    border-radius: 0 0 28px 28px;
+    background: linear-gradient(135deg, #003da5 0%, #002873 100%);
+    color: white;
+}
+
+.hero .title {
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.hero .subtitle {
+    font-size: 18px;
+    opacity: .85;
+    margin-bottom: 25px;
+}
+
+
+/* CARDS */
+.card {
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
+    transition: .25s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 40px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+    font-weight: 700;
+    color: var(--blue);
+}
+
+/* BUTTONS */
+.btn-primary {
+    background: var(--blue);
+    border-color: var(--blue);
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background: var(--blue-dark);
+    border-color: var(--blue-dark);
+}
+
+.btn-outline-primary {
+    border-color: var(--blue);
+    color: var(--blue);
+}
+
+.btn-outline-primary:hover {
+    background: var(--blue);
+    color: #fff;
+}
+
+/* FOOTER */
+footer {
+    color: #6d7689;
+    font-size: .9rem;
+}
+
+/* ===== BRAND LOGO BAR ===== */
+.brand-section h2 {
+    font-weight: 800;
+    color: var(--michelin-blue);
+}
+
+.brand-row img {
+    width: 100%;
+    max-width: 120px;
+    opacity: 0.8;
+    transition: 0.2s ease;
+    filter: grayscale(100%);
+}
+
+.brand-row img:hover {
+    opacity: 1;
+    filter: grayscale(0%);
+    transform: scale(1.05);
+}
+
+.partner-logos {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.partner-logos img {
+    height: 70px;
+    /* ukuran logo */
+    width: auto;
+    /* biar proporsional */
+    object-fit: contain;
+    filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.15));
+    transition: transform .25s ease;
+}
+
+.partner-logos img:hover {
+    transform: scale(1.08);
+}
